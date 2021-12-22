@@ -11,4 +11,4 @@ The new (and less democratic) Bomberman edition.
 
 To make this possible, you will have some little friends: atomic bombs. <br>
 
-Move across the map and when you run into another country's flag, who you gonna call? </p>
+Move across the map and when you run into another country's flag, who you gonna call? </p>💣
