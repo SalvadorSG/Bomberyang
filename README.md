@@ -3,7 +3,7 @@
 
 The new (and less democratic) Bomberman edition.
 
-![Logo](NoBackground.gif)
+![Logo](https://media.giphy.com/media/ixnL5o7423e212Cg9j/giphy.gif)
 
 
 If you want to play the game, click this link: (https://salvadorsg.github.io/Bomberyang/)
