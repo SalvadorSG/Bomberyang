@@ -13,11 +13,6 @@ To make this possible, you will have some little friends: atomic bombs. <br>
 
 Move across the map and when you run into another country's flag, who you gonna call? 💣
 
-## Game Motivation 
-
-I've spent lots of hours playing bomberman, especially in my bus trips, tht's why I decided to develop a similar game, but updating it to nowadays.
-
-
 ## Play the game 
 
 If you want to play the game, click this link: (https://salvadorsg.github.io/Bomberyang/)
@@ -34,3 +29,7 @@ If you want to play the game, click this link: (https://salvadorsg.github.io/Bom
 * 
 * 
 * 
+
+## Game Motivation 
+
+I've spent lots of hours playing bomberman, especially in my bus trips, tht's why I decided to develop a similar game, but updating it to nowadays.
