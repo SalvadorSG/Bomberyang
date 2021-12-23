@@ -1,0 +1,19 @@
+{
+  "name": "bomberyang",
+  "version": "1.0.0",
+  "description": "The new (and less democratic) Bomberman edition.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalvadorSG/Bomberyang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalvadorSG/Bomberyang/issues"
+  },
+  "homepage": "https://github.com/SalvadorSG/Bomberyang#readme"
+}
