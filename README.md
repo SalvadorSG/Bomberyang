@@ -20,6 +20,6 @@ Move across the map and when you run into another country's flag, who you gonna 
 
 ## Play the game 
 
-<p> If you want to play the game, click [here] (salvadorsg.github.io/bomberyang/) </p>
+If you want to play the game, click [here] (https://salvadorsg.github.io/Bomberyang/)
 
 
