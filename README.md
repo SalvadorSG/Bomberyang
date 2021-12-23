@@ -47,7 +47,7 @@ I've spent lots of hours playing bomberman, especially in my bus trips, tht's wh
 
 This is the real Bomberman, in case you don't know it.
 
-![Alt Text](https://tenor.com/view/bomberman-%E3%83%9C%E3%83%B3%E3%83%90%E3%83%BC%E3%83%9E%E3%83%B3-gif-10567250.gif)
+![Alt Text](https://media.giphy.com/media/psmjYov0chdqL9Uysz/giphy.gif)
 
 ---
 ---
