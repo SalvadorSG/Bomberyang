@@ -71,7 +71,7 @@ This game uses the next dependencies:
 
  + ### _Installation_
 
- To clone the project, just run the these commands:
+ To clone and work with the project, just run the these commands:
 
  1. Clone the project
 
