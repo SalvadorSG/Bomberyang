@@ -10,21 +10,17 @@ If you want to play the game, click this link: (https://salvadorsg.github.io/Bom
 ---
 ## __Index__
 
-* [Game Description](#description)
-* [Game Motivation](#motivation)
-* Run the project
-    - Technologies
-    - Installation
-* 
-* 
-* 
-* 
-* 
+* [Game Description](#game-description)
+* [Game Motivation](#game-motivation)
+* [Run the project](#run-the-project)
+    - [Technologies](#technologies)
+    - [Installation](#installation)
+
 
 ---
 ---
 
-## __Description__
+## __Game Description__
 
 
 
@@ -39,7 +35,7 @@ Move across the map and when you run into another country's flag, who you gonna 
 ---
 ---
 
-## __Motivation__
+## __Game Motivation__
 
 
 
@@ -62,14 +58,14 @@ This is the real Bomberman, in case you don't know it.
 
 This game uses the next dependencies:
 
-| Name         | Description |
-| :----:       |    :----:   |
-| Yarn         | Package Manager|
-| Typescript   |Typed programming language|
-|Parcel        |Web application bundler|
-|Lodash        |Provides utility functions|
-|Luxon         |To work with times|
-|Eslint        |Identifies and reports patterns|
+| Name          | Link                             |  Description                   |
+| :----:        |    :----:                        |    :----:                      |
+| Yarn          | https://yarnpkg.com/             |  Package Manager               |
+| Typescript    | https://www.typescriptlang.org/  | Typed programming language     |
+| Parcel        |https://parceljs.org/             | Web application bundler        |
+| Lodash        |https://lodash.com/               | Provides utility functions     |
+| Luxon         |https://moment.github.io/luxon/#/ | To work with times             |
+| Eslint        |https://eslint.org/               | Identifies and reports patterns|
 
 ---
 
