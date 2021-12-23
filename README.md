@@ -81,4 +81,12 @@ This game uses the next dependencies:
 
         cd Bomberyang
 
+3. Install yarn 
+
+        yarn install
+
+4. And run the files
+
+        yarn run dev
+
 
