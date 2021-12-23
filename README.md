@@ -20,6 +20,20 @@ Move across the map and when you run into another country's flag, who you gonna 
 
 ## Play the game 
 
-If you want to play the game, click [here] (https://salvadorsg.github.io/Bomberyang/)
+If you want to play the game, click this link: (https://salvadorsg.github.io/Bomberyang/)
+
+## Index
+
+- Game Description
+
+- Game Motivation 
+
+- Play the game
+
+- Requierements
+
+- How to install and run
+
+- 
 
 
