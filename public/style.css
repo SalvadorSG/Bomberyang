@@ -1,0 +1,8 @@
+body{
+    background-color: #73B1DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
