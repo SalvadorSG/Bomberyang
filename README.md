@@ -62,7 +62,7 @@ This game uses the next dependencies:
 
 | Name          | Link                             |  Description                   |
 | :----:        |    :----:                        |    :----:                      |
-| Yarn          | https://yarnpkg.com/             |  Package Manager               |
+| NPM           | https://www.npmjs.com/           |  Package Manager               |
 | Typescript    | https://www.typescriptlang.org/  | Typed programming language     |
 | Parcel        |https://parceljs.org/             | Web application bundler        |
 | Lodash        |https://lodash.com/               | Provides utility functions     |

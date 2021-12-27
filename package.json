@@ -4,7 +4,8 @@
   "description": "The new (and less democratic) Bomberman edition.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
     "url": "https://github.com/SalvadorSG/Bomberyang/issues"
   },
   "homepage": "https://github.com/SalvadorSG/Bomberyang#readme",
-  "keywords": []
+  "dependencies": {
+    "parcel": "^2.0.1",
+    "typescript": "^4.5.4"
+  }
 }

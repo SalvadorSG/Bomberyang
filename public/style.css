@@ -1,8 +1,12 @@
 body{
-    background-color: #73B1DD;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: center;
+}
 
+canvas{
+    border: 1px solid red;
 }
