@@ -83,12 +83,12 @@ This game uses the next dependencies:
 
         cd Bomberyang
 
-3. Install yarn 
+3. Install npm 
 
-        yarn install
+        npm install
 
 4. And run the files
 
-        yarn run dev
+        npm run dev
 
 
