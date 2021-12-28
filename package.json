@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"parcel index.html"
+    "dev": "parcel index.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SalvadorSG/Bomberyang.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,7 +19,6 @@
   },
   "homepage": "https://github.com/SalvadorSG/Bomberyang#readme",
   "dependencies": {
-    "parcel": "^2.0.1",
-    "typescript": "^4.5.4"
+    "parcel": "^2.0.1"
   }
 }
