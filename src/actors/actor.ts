@@ -1,4 +1,4 @@
- import { Point } from "../types/point";
+ import { Point } from "../types/Point";
 
  export interface IActor {
 	position: Point;

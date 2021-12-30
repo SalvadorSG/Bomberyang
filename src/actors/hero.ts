@@ -1,5 +1,5 @@
 
-import { Point } from "../types/point";
+import { Point } from "../types/Point";
 import { Actor, IActor } from "./Actor";
 
 export class Hero extends Actor implements IActor {

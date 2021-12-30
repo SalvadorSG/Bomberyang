@@ -1,4 +1,5 @@
 import { Actor, IActor } from "./actors/Actor";
+import { FPSViewer } from "./actors/FPSViewer";
 import { Hero } from "./actors/Hero";
 
 
@@ -8,9 +9,10 @@ window.onload = () => {
 	var ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
 	let actor = new Hero();
+	let fps = new FPSViewer({ x: 5, y: 15 });
 
 
-	let actors: Array<IActor> = [actor];
+	let actors: Array<IActor> = [actor, fps];
 
 
 
