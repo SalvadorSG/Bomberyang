@@ -6,7 +6,7 @@ export class Hero extends Actor implements IActor {
    heroSize: number
    constructor(initialPos:Point = {x:50, y:50}) {
       super(initialPos)
-      this.heroSize = 100;
+      this.heroSize = 50;
    }
 
    draw(delta: number, ctx: CanvasRenderingContext2D) {
