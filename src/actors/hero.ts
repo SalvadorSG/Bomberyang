@@ -1,6 +1,9 @@
-export class Hero {
+import { Actor, IntActor } from "./actor";
+
+export class Hero extends Actor implements IntActor{
    heroSize: number
    constructor() {
+      super()
       this.heroSize = 20;
    }
 
