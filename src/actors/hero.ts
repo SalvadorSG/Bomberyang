@@ -31,19 +31,27 @@ export class Hero extends Actor implements IActor {
 
    keyboard_event_down(key:string){
       if(key == "ArrowRight"){
-         this.position.x +=10
+         this.position.x +=20
+       
+         
+
+         
+
       }
       
       if(key == "ArrowUp"){
-         this.position.y -=10
+         this.position.y -=20
+    
       }
 
       if(key == "ArrowLeft"){
-         this.position.x -=10
+         this.position.x -=20
+  
       }
 
       if(key == "ArrowDown"){
-         this.position.y +=10
+         this.position.y +=20
+
       }
    }
 
