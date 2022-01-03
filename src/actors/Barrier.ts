@@ -16,23 +16,4 @@ export class Barrier extends Actor implements IActor {
    update(delta:number){
        
    }
-
-   /*keyboard_event_down(key:string){
-      if(key == "ArrowRight"){
-         this.position.x +=5
-      }
-      
-      if(key == "ArrowUp"){
-         this.position.y -=5
-      }
-
-      if(key == "ArrowLeft"){
-         this.position.x -=5
-      }
-
-      if(key == "ArrowDown"){
-         this.position.y +=5
-      }
-   }*/
-
 }

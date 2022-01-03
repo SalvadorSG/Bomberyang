@@ -1,5 +1,6 @@
 
 import { Point } from "../types/Point";
+import { checkLimits } from "../utils/checkLimits";
 import { Actor, IActor } from "./Actor";
 
 export class Hero extends Actor implements IActor {
@@ -15,7 +16,13 @@ export class Hero extends Actor implements IActor {
    }
 
    update(delta:number){
-       
+       let newPos : Point = {
+          x:this.position.x,
+          y:this.position.y
+       }
+       if(checkLimits(newPos)){
+          this.position = newPos
+       }
    }
 
    keyboard_event_down(key:string){
