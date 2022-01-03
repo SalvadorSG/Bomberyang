@@ -12,6 +12,7 @@ window.onload = () => {
 	let actor = new Hero();
 	let fps = new FPSViewer({ x: 5, y: 15 });
 	let barrier = new Barrier();
+	
 
 
 	let actors: Array<IActor> = [actor, fps, barrier];
