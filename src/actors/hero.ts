@@ -4,18 +4,18 @@ import { checkLimits } from "../utils/checkLimits";
 import { Actor, IActor } from "./Actor";
 
 export class Hero extends Actor implements IActor {
-   heroSize: Size
-   heroSpeed: number
+   heroSize: Size;
+   heroSpeed: number;
    constructor(size : Size = {w : 100, h : 100}, initialPos : Point = {x : 50, y : 50}) {
-      super(initialPos)
+      super(initialPos);
       this.heroSize = size;
       this.heroSpeed = 0
    }
 
    update(delta:number){
       let newPos : Point = {
-         x: this.position.x,
-         y: this.position.y + this.heroSpeed
+         x: this.position.x * this.heroSpeed,
+         y: this.position.y * this.heroSpeed
       }
       if(checkLimits(newPos)){
          this.position = newPos;
@@ -32,27 +32,18 @@ export class Hero extends Actor implements IActor {
    keyboard_event_down(key:string){
       if(key == "ArrowRight"){
          this.position.x +=20
-       
-         
-
-         
-
       }
       
       if(key == "ArrowUp"){
          this.position.y -=20
-    
       }
 
       if(key == "ArrowLeft"){
          this.position.x -=20
-  
       }
 
       if(key == "ArrowDown"){
          this.position.y +=20
-
       }
    }
-
 }
