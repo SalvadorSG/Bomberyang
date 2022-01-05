@@ -14,8 +14,8 @@ export class Hero extends Actor implements IActor {
 
    update(delta:number){
       let newPos : Point = {
-         x: this.position.x * this.heroSpeed,
-         y: this.position.y * this.heroSpeed
+         x: this.position.x -= this.heroSpeed,
+         y: this.position.y -= this.heroSpeed
       }
       if(checkLimits(newPos)){
          this.position = newPos;

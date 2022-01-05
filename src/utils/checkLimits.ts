@@ -5,11 +5,9 @@ export const checkLimits = (position: Point) => {
 		position.x > 0 &&
 		position.y < 550 &&
 		position.y > 0
-	) 
+	) {
         return true;
-	
-        console.log("border")
-        return false;
-    
+	}
 
+		return false;
 };
