@@ -1,7 +1,8 @@
 import { Actor, IActor } from "./actors/Actor";
 import { Barrier } from "./actors/Barrier";
 import { FPSViewer } from "./actors/FPSViewer";
-import { Hero } from "./actors/Hero";
+import { Hero } from "./actors/Hero"; 
+import { Map } from "./actors/Map"
 
 
 
@@ -13,9 +14,11 @@ window.onload = () => {
 	let fps = new FPSViewer({ x: 5, y: 15 });
 	let barrier = new Barrier();
 	
+	
+	
 
 
-	let actors: Array<IActor> = [actor, fps, barrier];
+	let actors: Array<IActor> = [new Map({x:0, y:0}), actor, fps, barrier];
 
 
 

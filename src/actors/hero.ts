@@ -5,17 +5,19 @@ import { Actor, IActor } from "./Actor";
 
 export class Hero extends Actor implements IActor {
    heroSize: Size;
-   heroSpeed: number;
-   constructor(size : Size = {w : 100, h : 100}, initialPos : Point = {x : 50, y : 50}) {
+   xSpeed: number;
+   ySpeed:number
+   constructor(size : Size = {w : 50, h : 50}, initialPos : Point = {x : 50, y : 50}) {
       super(initialPos);
       this.heroSize = size;
-      this.heroSpeed = 0
+      this.xSpeed = 0;
+      this.ySpeed = 0;
    }
 
    update(delta:number){
       let newPos : Point = {
-         x: this.position.x -= this.heroSpeed,
-         y: this.position.y -= this.heroSpeed
+         x: this.position.x + this.xSpeed,
+         y: this.position.y + this.ySpeed
       }
       if(checkLimits(newPos)){
          this.position = newPos;
