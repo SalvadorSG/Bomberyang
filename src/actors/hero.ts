@@ -1,51 +1,79 @@
 import { Size } from "../types/Size";
 import { Point } from "../types/Point";
-import { checkLimits } from "../utils/checkLimits";
+import { checkLimitsControl } from "../utils/checkLimits";
 import { Actor, IActor } from "./Actor";
 
 export class Hero extends Actor implements IActor {
-   heroSize: Size;
-   xSpeed: number;
-   ySpeed:number
-   constructor(size : Size = {w : 50, h : 50}, initialPos : Point = {x : 50, y : 50}) {
-      super(initialPos);
-      this.heroSize = size;
-      this.xSpeed = 0;
-      this.ySpeed = 0;
-   }
-
-   update(delta:number){
-      let newPos : Point = {
-         x: this.position.x + this.xSpeed,
-         y: this.position.y + this.ySpeed
-      }
-      if(checkLimits(newPos)){
-         this.position = newPos;
-      }
+  size: Size;
+  speed: number;
+  blocks: Array<any>;
+  constructor(
+    size: Size,
+    initialPos: Point,
+    blocks: any
+  ) {
+    super(initialPos);
+    this.size = size;
+    this.speed = 5;
+    this.blocks = blocks;
   }
 
-   draw(delta: number, ctx: CanvasRenderingContext2D) {
-      ctx.fillStyle = 'green';
-      ctx.fillRect(this.position.x, this.position.y, this.heroSize.w, this.heroSize.h);
-   }
+  collisionControler(position: Point) {
+    for (let i = 0; i < this.blocks.length; i++) {
+      let block = this.blocks[i];
+      if (
+        position.x > block.x + block.w ||
+        position.x + this.size.w < block.x ||
+        position.y > block.y + block.h ||
+        position.y + this.size.h < block.y
+      ) {
+      } else return true;
+    }
+  }
 
+  update(delta: number) {
+    let newPos: Point = {
+      x: this.position.x,
+      y: this.position.y + this.speed,
+    };
+  }
 
+  draw(delta: number, ctx: CanvasRenderingContext2D) {
+    ctx.fillStyle = "green";
+    ctx.fillRect(this.position.x, this.position.y, this.size.w, this.size.h);
+  }
 
-   keyboard_event_down(key:string){
-      if(key == "ArrowRight"){
-         this.position.x +=20
+  keyboard_event_down(key: string) {
+    if (key == "ArrowRight") {
+       let position = {...this.position}
+       position.x += this.speed
+      if (!this.collisionControler(position)) {
+        this.position.x += this.speed;
       }
-      
-      if(key == "ArrowUp"){
-         this.position.y -=20
-      }
+    }
 
-      if(key == "ArrowLeft"){
-         this.position.x -=20
+    if (key == "ArrowUp") {
+      let position =  {...this.position}
+      position.y -= this.speed
+      if (!this.collisionControler(position)) {
+        this.position.y -= this.speed;
       }
+    }
 
-      if(key == "ArrowDown"){
-         this.position.y +=20
+    if (key == "ArrowLeft") {
+      let position =  {...this.position}
+      position.x -= this.speed
+      if (!this.collisionControler(position)) {
+        this.position.x -= this.speed;
       }
-   }
+    }
+
+    if (key == "ArrowDown") {
+      let position =  {...this.position}
+      position.y += this.speed
+      if (!this.collisionControler(position)) {
+        this.position.y += this.speed;
+      }
+    }
+  }
 }

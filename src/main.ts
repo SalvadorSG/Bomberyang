@@ -10,7 +10,8 @@ window.onload = () => {
 	var canvas = document.getElementById("canvas") as HTMLCanvasElement;
 	var ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
 
-	let actor = new Hero();
+	let tablero = new Map();
+	let actor = new Hero({ w: 25, h: 25 }, { x: 70, y: 70 }, tablero.blocks);
 	let fps = new FPSViewer({ x: 5, y: 15 });
 	let barrier = new Barrier();
 	
@@ -18,7 +19,7 @@ window.onload = () => {
 	
 
 
-	let actors: Array<IActor> = [new Map({x:0, y:0}), actor, fps, barrier];
+	let actors: Array<IActor> = [ tablero, actor, fps, barrier];
 
 
 
