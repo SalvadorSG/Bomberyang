@@ -1,6 +1,6 @@
 import { Size } from "../types/Size";
 import { Point } from "../types/Point";
-import { checkLimitsControl } from "../utils/checkLimits";
+import { checkLimits } from "../utils/checkLimits";
 import { Actor, IActor } from "./Actor";
 
 export class Hero extends Actor implements IActor {
