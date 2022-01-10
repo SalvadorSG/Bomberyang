@@ -46,7 +46,7 @@ export class Map extends Actor implements IActor {
         ctx.beginPath();
 
         if (level[x][y] == "W") {
-          ctx.fillStyle = "brown";
+          ctx.fillStyle = "green";
           ctx.rect(
             y * this.unitaryHeight,
             x * this.unitaryWidth,
