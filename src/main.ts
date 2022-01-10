@@ -10,7 +10,7 @@ window.onload = () => {
 
   let maze = new Map();
   let actor = new Hero({ w: 25, h: 25 }, { x: 70, y: 70 }, maze.blocks);
-  let fps = new FPSViewer({ x: 5, y: 15 });
+  let fps = new FPSViewer({ x: 10, y: 25 });
   let bomb = new Bomb();
 
   let actors: Array<IActor> = [maze, actor, fps, bomb];

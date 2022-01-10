@@ -13,7 +13,7 @@ export class Hero extends Actor implements IActor {
   constructor(size: Size, initialPos: Point, blocks: any) {
     super(initialPos);
     this.size = size;
-    this.speed = 5;
+    this.speed = 12;
     this.blocks = blocks;
     this.sprite = new Image();
     this.sprite.src = Sprite;
