@@ -13,5 +13,3 @@ export const checkLimits = (position: Point) => {
     return "top";
   }
 };
-
-

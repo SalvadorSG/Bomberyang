@@ -23,7 +23,6 @@ export class Map extends Actor implements IActor {
     this.blockGenerator();
   }
   blockGenerator() {
-    console.log("blockgenerator");
     for (let x = 0; x < level.length; x++) {
       for (let y = 0; y < level[x].length; y++) {
         if (level[x][y] == "W") {
@@ -40,7 +39,6 @@ export class Map extends Actor implements IActor {
   update() {}
   keyboard_event() {}
   draw(delta: number, ctx: CanvasRenderingContext2D) {
-
     ctx.save();
     ctx.translate(0, 0);
     for (let x = 0; x < level.length; x++) {
