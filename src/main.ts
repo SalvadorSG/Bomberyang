@@ -2,6 +2,7 @@ import { Actor, IActor } from "./actors/Actor";
 import { Bomb } from "./actors/Bomb";
 import { FPSViewer } from "./actors/FPSViewer";
 import { Hero } from "./actors/Hero";
+
 import { Map } from "./actors/Map";
 
 window.onload = () => {
